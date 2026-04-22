@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone-frame">
+  <div class="phone-screen">
+
+    <div class="container">
+      <h2>Our Photos 📸</h2>
+
+      <div class="photo-grid">
+        <img src="1.jpg" onclick="openPhoto(this.src)">
+        <img src="2.jpg" onclick="openPhoto(this.src)">
+        <img src="3.jpg" onclick="openPhoto(this.src)">
+        <img src="4.jpg" onclick="openPhoto(this.src)">
+        <img src="5.jpg" onclick="openPhoto(this.src)">
+        <img src="6.jpg" onclick="openPhoto(this.src)">
+        <img src="7.jpg" onclick="openPhoto(this.src)">
+        <img src="8.jpg" onclick="openPhoto(this.src)">
+        <img src="9.jpg" onclick="openPhoto(this.src)">
+        <img src="10.jpg" onclick="openPhoto(this.src)">
+        <img src="11.jpg" onclick="openPhoto(this.src)">
+        <img src="12.jpg" onclick="openPhoto(this.src)">
+        <img src="13.jpg" onclick="openPhoto(this.src)">
+        <img src="14.jpg" onclick="openPhoto(this.src)">
+        <img src="15.jpg" onclick="openPhoto(this.src)">
+        <img src="16.jpg" onclick="openPhoto(this.src)">
+        <img src="17.jpg" onclick="openPhoto(this.src)">
+        <img src="18.jpg" onclick="openPhoto(this.src)">
+      </div>
+
+      <button onclick="goBack()">⬅ Back</button>
+    </div>
+
+  </div>
+</div>
+
+<div id="photoViewer" class="photo-viewer" onclick="closePhoto()">
+  <img id="fullPhoto">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

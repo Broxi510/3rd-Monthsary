@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lock Screen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone-frame">
+  <div class="phone-screen lockscreen-bg">
+
+    <!-- TIME -->
+    <div class="lock-top">
+      <div class="lock-date" id="date"></div>
+      <div class="lock-time" id="time"></div>
+    </div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-card">
+
+      <!-- IMAGE -->
+      <img id="albumCover" src="download2.jpg" class="album-cover">
+
+      <!-- SONG INFO -->
+      <div class="song-info">
+        <h3 id="songTitle">Loading...</h3>
+        <p id="artist">Loading...</p>
+      </div>
+
+      <!-- PROGRESS -->
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <!-- TIME -->
+      <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="controls">
+        <span onclick="prevSong()">⏮️</span>
+        <span onclick="togglePlay()" id="playBtn">▶️</span>
+        <span onclick="nextSong()">⏭️</span>
+      </div>
+
+    </div>
+
+    <!-- 🔥 IMPORTANT: AUDIO -->
+    <audio id="audio" preload="auto"></audio>
+
+    <!-- UNLOCK -->
+    <div class="lock-bottom">
+      <div class="unlock-area full" onclick="unlock()">
+        <p id="status">Tap to open 💖</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
